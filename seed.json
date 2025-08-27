@@ -1,0 +1,248 @@
+[
+  {
+    "slug": "beam-ai",
+    "name": "Beam AI",
+    "summary": "An enterprise-grade agentic process automation platform that deploys autonomous agents to streamline workflows across industries like healthcare, finance, and customer service.",
+    "case_studies": [
+      {
+        "title": "Avi Medical – Healthcare Inquiry Automation",
+        "summary": "Avi Medical reduced patient response times and lowered handling cost by 93% by automating routine inquiries with Beam AI agents." 
+      },
+      {
+        "title": "Martech Firm – Contact Processor",
+        "summary": "Beam AI’s Contact Agent Processor automated natural-language email updates across multiple systems, eliminating manual delays and cognitive load for customer success teams."
+      },
+      {
+        "title": "Quotation Generation Agent",
+        "summary": "An agent intelligently managed the quotation lifecycle—identifying products and model numbers accurately, eliminating manual cross-reference errors."
+      }
+    ],
+    "contact_emails": [""],
+    "Task Orchestration": 8,
+    "Context Management": 7,
+    "Integration": 9,
+    "Multi-Agent": 8,
+    "Human Oversight": 7,
+    "Self-Improvement": 8,
+    "Development Ease": 5,
+    "Scalability": 8,
+    "Security and Compliance": 9,
+    "Vendor Support": 7,
+    "Cost-Effectiveness": 8
+  },
+  {
+    "slug": "n8n",
+    "name": "n8n",
+    "summary": "An open-source visual automation and workflow tool that supports integration with AI services to build flexible automation flows.",
+    "case_studies": [
+      {
+        "title": "Vodafone – Threat Intelligence Automation",
+        "summary": "Vodafone used n8n to revolutionize threat intelligence workflows, saving £2.2 million."
+      },
+      {
+        "title": "Stepstone – Mission-Critical Workflows",
+        "summary": "Stepstone runs over 200 workflows with n8n, speeding integration of data sources by 25x."
+      },
+      {
+        "title": "Supply Chain AI Agent Use Case",
+        "summary": "An AI agent was built in n8n to automate warehouse order processing via email parsing, enabling supply chain analytics automation."
+      }
+    ],
+    "contact_emails": [""],
+    "Task Orchestration": 6,
+    "Context Management": 6,
+    "Integration": 10,
+    "Multi-Agent": 5,
+    "Human Oversight": 8,
+    "Self-Improvement": 5,
+    "Development Ease": 9,
+    "Scalability": 7,
+    "Security and Compliance": 6,
+    "Vendor Support": 8,
+    "Cost-Effectiveness": 9
+  },
+  {
+    "slug": "minimax-agent",
+    "name": "MiniMax Agent",
+    "summary": "A high-capability autonomous AI assistant that can generate code, design, multimedia content, and deploy complex workflows from simple natural-language prompts.",
+    "case_studies": [
+      {
+        "title": "Netflix Clone in Minutes",
+        "summary": "Users reported MiniMax Agent generated a working Netflix-style streaming application from a single prompt using approximately 356 credits."
+      }
+    ],
+    "contact_emails": [""],
+    "Task Orchestration": 10,
+    "Context Management": 9,
+    "Integration": 6,
+    "Multi-Agent": 8,
+    "Human Oversight": 6,
+    "Self-Improvement": 7,
+    "Development Ease": 10,
+    "Scalability": 7,
+    "Security and Compliance": 5,
+    "Vendor Support": 6,
+    "Cost-Effectiveness": 7
+  },
+  {
+    "slug": "pydantic-ai",
+    "name": "Pydantic AI",
+    "summary": "A Python developer-focused framework for building production-grade AI agents using typed data models including validation, async support, and tool integration.",
+    "case_studies": [
+      {
+        "title": "RAG Knowledge-Base Agent",
+        "summary": "Using Pydantic AI, developers built a reliable retrieval-augmented generation agent with minimized hallucinations and strong type-safe design."
+      }
+    ],
+    "contact_emails": [""],
+    "Task Orchestration": 7,
+    "Context Management": 8,
+    "Integration": 9,
+    "Multi-Agent": 7,
+    "Human Oversight": 8,
+    "Self-Improvement": 7,
+    "Development Ease": 8,
+    "Scalability": 8,
+    "Security and Compliance": 7,
+    "Vendor Support": 7,
+    "Cost-Effectiveness": 9
+  },
+  {
+    "slug": "agentforce",
+    "name": "Agentforce (Einstein)",
+    "summary": "Salesforce’s enterprise AI agent platform embedded within its CRM ecosystem, providing autonomous agents that can analyze data, generate content, and execute actions with governance.",
+    "case_studies": [
+      {
+        "title": "SDR Outreach Automation",
+        "summary": "An SDR Agent triggered by lead engagement automatically handled outreach workflows, improving efficiency in sales development."
+      },
+      {
+        "title": "Einstein Sales Coach",
+        "summary": "Embedded within opportunity layouts, the AI coach allowed sales reps to role-play and receive reviews of sales conversations."
+      }
+    ],
+    "contact_emails": [""],
+    "Task Orchestration": 9,
+    "Context Management": 9,
+    "Integration": 10,
+    "Multi-Agent": 9,
+    "Human Oversight": 9,
+    "Self-Improvement": 8,
+    "Development Ease": 9,
+    "Scalability": 9,
+    "Security and Compliance": 10,
+    "Vendor Support": 9,
+    "Cost-Effectiveness": 8
+  },
+    {
+    "slug": "langgraph",
+    "name": "LangGraph",
+    "summary": "A graph-based orchestration framework built on LangChain for building complex, agentic AI workflows.",
+    "case_studies": [
+      {
+        "title": "Definely legal assistant",
+        "summary": "Definely used LangGraph to design a multi-agent system to help lawyers speed up workflows."}
+    ],
+    "contact_emails": [""],
+    "Task Orchestration": 9,
+    "Context Management": 8,
+    "Integration": 8,
+    "Multi-Agent": 8,
+    "Human Oversight": 8,
+    "Self-Improvement": 7,
+    "Development Ease": 6,
+    "Scalability": 9,
+    "Security and Compliance": 8,
+    "Vendor Support": 7,
+    "Cost-Effectiveness": 8
+  },
+  {
+    "slug": "napkin-ai",
+    "name": "Napkin AI",
+    "summary": "A visual-generation AI tool that turns business text into diagrams and infographics instantly.",
+    "case_studies": [
+      {
+        "title": "Design cost reduction",
+        "summary": "User reported replacing a graphic design company, lowering design costs by 94% and reducing turnaround time to near zero."}
+    ],
+    "contact_emails": [""],
+    "Task Orchestration": 3,
+    "Context Management": 4,
+    "Integration": 3,
+    "Multi-Agent": 3,
+    "Human Oversight": 5,
+    "Self-Improvement": 4,
+    "Development Ease": 9,
+    "Scalability": 8,
+    "Security and Compliance": 5,
+    "Vendor Support": 6,
+    "Cost-Effectiveness": 8
+  },
+  {
+    "slug": "mgx-dev",
+    "name": "MGX (MetaGPT X)",
+    "summary": "A no-code multi-agent ‘AI Dev Team’ that builds and deploys apps, websites, dashboards and tools from natural-language prompts.",
+    "case_studies": [
+      {
+        "title": "Web app generation",
+        "summary": "Users can chat to build and deploy websites, blogs, dashboards, tools in any language without coding."}
+    ],
+    "contact_emails": [""],
+    "Task Orchestration": 7,
+    "Context Management": 6,
+    "Integration": 5,
+    "Multi-Agent": 7,
+    "Human Oversight": 6,
+    "Self-Improvement": 6,
+    "Development Ease": 8,
+    "Scalability": 7,
+    "Security and Compliance": 6,
+    "Vendor Support": 6,
+    "Cost-Effectiveness": 7
+  },
+  {
+    "slug": "microsoft-autogen",
+    "name": "Microsoft AutoGen",
+    "summary": "An enterprise-grade open-source framework for building scalable, multi-agent, event-driven AI workflows (with optional no-code Studio).",
+    "case_studies": [
+      {
+        "title": "Retail agent system",
+        "summary": "A Medium case describes building a retail AI agent system with AutoGen to enhance customer engagement."}
+    ],
+    "contact_emails": [""],
+    "Task Orchestration": 10,
+    "Context Management": 9,
+    "Integration": 8,
+    "Multi-Agent": 10,
+    "Human Oversight": 8,
+    "Self-Improvement": 8,
+    "Development Ease": 5,
+    "Scalability": 10,
+    "Security and Compliance": 8,
+    "Vendor Support": 9,
+    "Cost-Effectiveness": 8
+  },
+  {
+    "slug": "crewai",
+    "name": "CrewAI",
+    "summary": "An intuitive multi-agent collaboration framework with role-based agents, rich integrations, and flexible deployment options.",
+    "case_studies": [
+      {
+        "title": "Gelato fulfillment automation",
+        "summary": "CrewAI plugged into Gelato Connect to automate heavy data-mapping and integration work, speeding up time-to-business."}
+    ],
+    "contact_emails": [""],
+    "Task Orchestration": 8,
+    "Context Management": 8,
+    "Integration": 9,
+    "Multi-Agent": 8,
+    "Human Oversight": 8,
+    "Self-Improvement": 7,
+    "Development Ease": 9,
+    "Scalability": 8,
+    "Security and Compliance": 7,
+    "Vendor Support": 8,
+    "Cost-Effectiveness": 8
+  }
+]
+
