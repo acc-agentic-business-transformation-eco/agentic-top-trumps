@@ -1,248 +1,496 @@
 [
   {
-    "slug": "beam-ai",
-    "name": "Beam AI",
-    "summary": "An enterprise-grade agentic process automation platform that deploys autonomous agents to streamline workflows across industries like healthcare, finance, and customer service.",
-    "case_studies": [
-      {
-        "title": "Avi Medical – Healthcare Inquiry Automation",
-        "summary": "Avi Medical reduced patient response times and lowered handling cost by 93% by automating routine inquiries with Beam AI agents." 
-      },
-      {
-        "title": "Martech Firm – Contact Processor",
-        "summary": "Beam AI’s Contact Agent Processor automated natural-language email updates across multiple systems, eliminating manual delays and cognitive load for customer success teams."
-      },
-      {
-        "title": "Quotation Generation Agent",
-        "summary": "An agent intelligently managed the quotation lifecycle—identifying products and model numbers accurately, eliminating manual cross-reference errors."
-      }
-    ],
-    "contact_emails": [""],
-    "Task Orchestration": 8,
-    "Context Management": 7,
-    "Integration": 9,
-    "Multi-Agent": 8,
-    "Human Oversight": 7,
-    "Self-Improvement": 8,
-    "Development Ease": 5,
-    "Scalability": 8,
-    "Security and Compliance": 9,
-    "Vendor Support": 7,
-    "Cost-Effectiveness": 8
-  },
-  {
-    "slug": "n8n",
-    "name": "n8n",
-    "summary": "An open-source visual automation and workflow tool that supports integration with AI services to build flexible automation flows.",
-    "case_studies": [
-      {
-        "title": "Vodafone – Threat Intelligence Automation",
-        "summary": "Vodafone used n8n to revolutionize threat intelligence workflows, saving £2.2 million."
-      },
-      {
-        "title": "Stepstone – Mission-Critical Workflows",
-        "summary": "Stepstone runs over 200 workflows with n8n, speeding integration of data sources by 25x."
-      },
-      {
-        "title": "Supply Chain AI Agent Use Case",
-        "summary": "An AI agent was built in n8n to automate warehouse order processing via email parsing, enabling supply chain analytics automation."
-      }
-    ],
-    "contact_emails": [""],
-    "Task Orchestration": 6,
-    "Context Management": 6,
-    "Integration": 10,
-    "Multi-Agent": 5,
-    "Human Oversight": 8,
-    "Self-Improvement": 5,
-    "Development Ease": 9,
-    "Scalability": 7,
-    "Security and Compliance": 6,
-    "Vendor Support": 8,
-    "Cost-Effectiveness": 9
-  },
-  {
-    "slug": "minimax-agent",
-    "name": "MiniMax Agent",
-    "summary": "A high-capability autonomous AI assistant that can generate code, design, multimedia content, and deploy complex workflows from simple natural-language prompts.",
-    "case_studies": [
-      {
-        "title": "Netflix Clone in Minutes",
-        "summary": "Users reported MiniMax Agent generated a working Netflix-style streaming application from a single prompt using approximately 356 credits."
-      }
-    ],
-    "contact_emails": [""],
-    "Task Orchestration": 10,
-    "Context Management": 9,
-    "Integration": 6,
-    "Multi-Agent": 8,
-    "Human Oversight": 6,
-    "Self-Improvement": 7,
-    "Development Ease": 10,
-    "Scalability": 7,
-    "Security and Compliance": 5,
-    "Vendor Support": 6,
-    "Cost-Effectiveness": 7
-  },
-  {
-    "slug": "pydantic-ai",
-    "name": "Pydantic AI",
-    "summary": "A Python developer-focused framework for building production-grade AI agents using typed data models including validation, async support, and tool integration.",
-    "case_studies": [
-      {
-        "title": "RAG Knowledge-Base Agent",
-        "summary": "Using Pydantic AI, developers built a reliable retrieval-augmented generation agent with minimized hallucinations and strong type-safe design."
-      }
-    ],
-    "contact_emails": [""],
-    "Task Orchestration": 7,
-    "Context Management": 8,
-    "Integration": 9,
-    "Multi-Agent": 7,
-    "Human Oversight": 8,
-    "Self-Improvement": 7,
-    "Development Ease": 8,
-    "Scalability": 8,
-    "Security and Compliance": 7,
-    "Vendor Support": 7,
-    "Cost-Effectiveness": 9
-  },
-  {
-    "slug": "agentforce",
-    "name": "Agentforce (Einstein)",
-    "summary": "Salesforce’s enterprise AI agent platform embedded within its CRM ecosystem, providing autonomous agents that can analyze data, generate content, and execute actions with governance.",
-    "case_studies": [
-      {
-        "title": "SDR Outreach Automation",
-        "summary": "An SDR Agent triggered by lead engagement automatically handled outreach workflows, improving efficiency in sales development."
-      },
-      {
-        "title": "Einstein Sales Coach",
-        "summary": "Embedded within opportunity layouts, the AI coach allowed sales reps to role-play and receive reviews of sales conversations."
-      }
-    ],
-    "contact_emails": [""],
-    "Task Orchestration": 9,
-    "Context Management": 9,
-    "Integration": 10,
-    "Multi-Agent": 9,
-    "Human Oversight": 9,
-    "Self-Improvement": 8,
-    "Development Ease": 9,
-    "Scalability": 9,
-    "Security and Compliance": 10,
-    "Vendor Support": 9,
-    "Cost-Effectiveness": 8
-  },
-    {
     "slug": "langgraph",
     "name": "LangGraph",
     "summary": "A graph-based orchestration framework built on LangChain for building complex, agentic AI workflows.",
     "case_studies": [
-      {
-        "title": "Definely legal assistant",
-        "summary": "Definely used LangGraph to design a multi-agent system to help lawyers speed up workflows."}
+      { "title": "Definely legal assistant", "summary": "Definely used LangGraph to design a multi-agent system to help lawyers speed up workflows." }
     ],
     "contact_emails": [""],
-    "Task Orchestration": 9,
-    "Context Management": 8,
-    "Integration": 8,
-    "Multi-Agent": 8,
-    "Human Oversight": 8,
-    "Self-Improvement": 7,
-    "Development Ease": 6,
-    "Scalability": 9,
-    "Security and Compliance": 8,
-    "Vendor Support": 7,
-    "Cost-Effectiveness": 8
+    "taskOrchestration": 9,
+    "contextManagement": 8,
+    "integration": 8,
+    "multiAgent": 8,
+    "humanOversight": 8,
+    "selfImprovement": 7,
+    "developmentEase": 6,
+    "scalability": 9,
+    "securityCompliance": 8,
+    "vendorSupport": 7,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-purple-400 to-pink-600"
   },
   {
     "slug": "napkin-ai",
     "name": "Napkin AI",
     "summary": "A visual-generation AI tool that turns business text into diagrams and infographics instantly.",
     "case_studies": [
-      {
-        "title": "Design cost reduction",
-        "summary": "User reported replacing a graphic design company, lowering design costs by 94% and reducing turnaround time to near zero."}
+      { "title": "Design cost reduction", "summary": "User reported replacing a graphic design company, lowering design costs by ~94% and reducing turnaround time to near-zero." }
     ],
     "contact_emails": [""],
-    "Task Orchestration": 3,
-    "Context Management": 4,
-    "Integration": 3,
-    "Multi-Agent": 3,
-    "Human Oversight": 5,
-    "Self-Improvement": 4,
-    "Development Ease": 9,
-    "Scalability": 8,
-    "Security and Compliance": 5,
-    "Vendor Support": 6,
-    "Cost-Effectiveness": 8
+    "taskOrchestration": 3,
+    "contextManagement": 4,
+    "integration": 3,
+    "multiAgent": 3,
+    "humanOversight": 5,
+    "selfImprovement": 4,
+    "developmentEase": 9,
+    "scalability": 8,
+    "securityCompliance": 5,
+    "vendorSupport": 6,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-blue-400 to-green-500"
   },
   {
     "slug": "mgx-dev",
     "name": "MGX (MetaGPT X)",
     "summary": "A no-code multi-agent ‘AI Dev Team’ that builds and deploys apps, websites, dashboards and tools from natural-language prompts.",
     "case_studies": [
-      {
-        "title": "Web app generation",
-        "summary": "Users can chat to build and deploy websites, blogs, dashboards, tools in any language without coding."}
+      { "title": "Web app generation", "summary": "Users chat to build and deploy websites, blogs, dashboards, and tools in any language without coding." }
     ],
     "contact_emails": [""],
-    "Task Orchestration": 7,
-    "Context Management": 6,
-    "Integration": 5,
-    "Multi-Agent": 7,
-    "Human Oversight": 6,
-    "Self-Improvement": 6,
-    "Development Ease": 8,
-    "Scalability": 7,
-    "Security and Compliance": 6,
-    "Vendor Support": 6,
-    "Cost-Effectiveness": 7
+    "taskOrchestration": 7,
+    "contextManagement": 6,
+    "integration": 5,
+    "multiAgent": 7,
+    "humanOversight": 6,
+    "selfImprovement": 6,
+    "developmentEase": 8,
+    "scalability": 7,
+    "securityCompliance": 6,
+    "vendorSupport": 6,
+    "costEffectiveness": 7,
+    "color": "bg-gradient-to-br from-yellow-400 to-orange-500"
   },
   {
     "slug": "microsoft-autogen",
     "name": "Microsoft AutoGen",
     "summary": "An enterprise-grade open-source framework for building scalable, multi-agent, event-driven AI workflows (with optional no-code Studio).",
     "case_studies": [
-      {
-        "title": "Retail agent system",
-        "summary": "A Medium case describes building a retail AI agent system with AutoGen to enhance customer engagement."}
+      { "title": "Retail agent system", "summary": "A production-style retail AI agent system was built with AutoGen to enhance customer engagement and operations." }
     ],
     "contact_emails": [""],
-    "Task Orchestration": 10,
-    "Context Management": 9,
-    "Integration": 8,
-    "Multi-Agent": 10,
-    "Human Oversight": 8,
-    "Self-Improvement": 8,
-    "Development Ease": 5,
-    "Scalability": 10,
-    "Security and Compliance": 8,
-    "Vendor Support": 9,
-    "Cost-Effectiveness": 8
+    "taskOrchestration": 10,
+    "contextManagement": 9,
+    "integration": 8,
+    "multiAgent": 10,
+    "humanOversight": 9,
+    "selfImprovement": 2,
+    "developmentEase": 7,
+    "scalability": 9,
+    "securityCompliance": 7,
+    "vendorSupport": 8,
+    "costEffectiveness": 9,
+    "color": "bg-gradient-to-br from-red-400 to-purple-500"
   },
   {
     "slug": "crewai",
     "name": "CrewAI",
     "summary": "An intuitive multi-agent collaboration framework with role-based agents, rich integrations, and flexible deployment options.",
     "case_studies": [
-      {
-        "title": "Gelato fulfillment automation",
-        "summary": "CrewAI plugged into Gelato Connect to automate heavy data-mapping and integration work, speeding up time-to-business."}
+      { "title": "Gelato fulfillment automation", "summary": "CrewAI integrated with Gelato to automate heavy data-mapping and integration work, accelerating fulfillment." }
     ],
     "contact_emails": [""],
-    "Task Orchestration": 8,
-    "Context Management": 8,
-    "Integration": 9,
-    "Multi-Agent": 8,
-    "Human Oversight": 8,
-    "Self-Improvement": 7,
-    "Development Ease": 9,
-    "Scalability": 8,
-    "Security and Compliance": 7,
-    "Vendor Support": 8,
-    "Cost-Effectiveness": 8
+    "taskOrchestration": 8,
+    "contextManagement": 8,
+    "integration": 9,
+    "multiAgent": 8,
+    "humanOversight": 8,
+    "selfImprovement": 7,
+    "developmentEase": 9,
+    "scalability": 8,
+    "securityCompliance": 7,
+    "vendorSupport": 8,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-green-400 to-blue-500"
+  },
+  {
+    "slug": "beam-ai",
+    "name": "Beam AI",
+    "summary": "An enterprise-grade agentic process automation platform that deploys autonomous agents to streamline workflows across functions.",
+    "case_studies": [
+      { "title": "Avi Medical – Healthcare inquiry automation", "summary": "Reduced patient response times and lowered handling cost by 93% by automating routine inquiries with Beam AI agents." },
+      { "title": "Martech firm – Contact Processor", "summary": "Automated natural-language email updates across multiple systems, eliminating manual delays for customer success teams." },
+      { "title": "Quotation Generation Agent", "summary": "Automatically identified products and model numbers and managed the quotation lifecycle, reducing manual errors." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 8,
+    "contextManagement": 7,
+    "integration": 9,
+    "multiAgent": 8,
+    "humanOversight": 7,
+    "selfImprovement": 8,
+    "developmentEase": 5,
+    "scalability": 8,
+    "securityCompliance": 9,
+    "vendorSupport": 7,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-red-500 to-yellow-500"
+  },
+  {
+    "slug": "n8n",
+    "name": "n8n",
+    "summary": "An open-source visual automation and workflow tool that supports integration with AI services to build flexible automation flows.",
+    "case_studies": [
+      { "title": "Vodafone – Threat intelligence automation", "summary": "Revolutionized threat intelligence workflows, saving ~£2.2 million with n8n-driven automations." },
+      { "title": "Stepstone – Mission-critical workflows", "summary": "Runs 200+ workflows; sped integration of data sources by ~25× using n8n." },
+      { "title": "Supply chain AI agent", "summary": "Automated warehouse order processing via email parsing; enabled supply chain analytics automation using n8n." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 6,
+    "contextManagement": 6,
+    "integration": 10,
+    "multiAgent": 5,
+    "humanOversight": 8,
+    "selfImprovement": 5,
+    "developmentEase": 9,
+    "scalability": 7,
+    "securityCompliance": 6,
+    "vendorSupport": 8,
+    "costEffectiveness": 9,
+    "color": "bg-gradient-to-br from-indigo-400 to-purple-500"
+  },
+  {
+    "slug": "minimax-agent",
+    "name": "MiniMax Agent",
+    "summary": "A high-capability autonomous AI assistant that can generate code, design, multimedia content, and deploy complex workflows from simple prompts.",
+    "case_studies": [
+      { "title": "Netflix clone in minutes", "summary": "Generated a working Netflix-style streaming web app from a single prompt, demonstrating end-to-end autonomy." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 10,
+    "contextManagement": 9,
+    "integration": 6,
+    "multiAgent": 8,
+    "humanOversight": 6,
+    "selfImprovement": 7,
+    "developmentEase": 10,
+    "scalability": 7,
+    "securityCompliance": 5,
+    "vendorSupport": 6,
+    "costEffectiveness": 7,
+    "color": "bg-gradient-to-br from-pink-400 to-red-500"
+  },
+  {
+    "slug": "pydantic-ai",
+    "name": "Pydantic AI",
+    "summary": "A Python developer-focused framework for building production-grade AI agents using typed data models, validation, async support, and tool integration.",
+    "case_studies": [
+      { "title": "RAG knowledge-base agent", "summary": "Developers built a reliable retrieval-augmented agent with type-safe outputs and reduced hallucinations." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 7,
+    "contextManagement": 8,
+    "integration": 9,
+    "multiAgent": 7,
+    "humanOversight": 8,
+    "selfImprovement": 7,
+    "developmentEase": 8,
+    "scalability": 8,
+    "securityCompliance": 7,
+    "vendorSupport": 7,
+    "costEffectiveness": 9,
+    "color": "bg-gradient-to-br from-green-500 to-blue-600"
+  },
+  {
+    "slug": "agentforce",
+    "name": "Agentforce (Einstein)",
+    "summary": "Salesforce’s enterprise AI agent platform embedded within its CRM ecosystem, enabling agents to analyze data, generate content, and execute actions with governance.",
+    "case_studies": [
+      { "title": "SDR outreach automation", "summary": "An SDR Agent triggered by lead engagement handled outreach workflows, improving efficiency and conversion speed." },
+      { "title": "Einstein Sales Coach", "summary": "Provided in-context coaching and conversation reviews to help reps practice and improve sales performance." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 9,
+    "contextManagement": 9,
+    "integration": 10,
+    "multiAgent": 9,
+    "humanOversight": 9,
+    "selfImprovement": 8,
+    "developmentEase": 9,
+    "scalability": 9,
+    "securityCompliance": 10,
+    "vendorSupport": 9,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-indigo-500 to-purple-600"
+  },
+  {
+    "slug": "sap-joule-agents",
+    "name": "SAP — Joule Agents (incl. SAP AI Copilot)",
+    "summary": "A portfolio of embedded AI agents across SAP cloud apps (finance, sales, service, HR, supply chain) orchestrated by SAP’s Joule Copilot, grounded in SAP Business Data Cloud and Knowledge Graph.",
+    "case_studies": [
+      { "title": "Bosch – Case classification agent", "summary": "Replaced hundreds of manual routing rules with a prompt-driven agent in SAP Service Cloud, accelerating support resolution." },
+      { "title": "Finance – Dispute & A/R agents", "summary": "Projected up to ~30% reduction in dispute handling costs and improved collections by automating cross-functional validation and follow-ups." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 7,
+    "contextManagement": 9,
+    "integration": 8,
+    "multiAgent": 7,
+    "humanOversight": 9,
+    "selfImprovement": 7,
+    "developmentEase": 7,
+    "scalability": 9,
+    "securityCompliance": 10,
+    "vendorSupport": 9,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-yellow-500 to-orange-600"
+  },
+  {
+    "slug": "oracle-ai-agents",
+    "name": "Oracle — Fusion Cloud AI Agents",
+    "summary": "Prebuilt and customizable autonomous agents embedded in Oracle Fusion Cloud (ERP, HCM, SCM, CX) to automate multi-step enterprise processes with source-cited responses.",
+    "case_studies": [
+      { "title": "Oracle Finance – Reconciliation agent", "summary": "Automated matching and variance analysis, reducing manual close effort; Oracle reports strong internal efficiency gains." },
+      { "title": "Telecom – Support triage agent", "summary": "Learned from historical tickets to classify and auto-respond to common issues, improving first-contact resolution." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 7,
+    "contextManagement": 8,
+    "integration": 8,
+    "multiAgent": 7,
+    "humanOversight": 8,
+    "selfImprovement": 7,
+    "developmentEase": 8,
+    "scalability": 9,
+    "securityCompliance": 9,
+    "vendorSupport": 9,
+    "costEffectiveness": 9,
+    "color": "bg-gradient-to-br from-purple-500 to-pink-600"
+  },
+  {
+    "slug": "vertex-ai-agent-builder",
+    "name": "Google Cloud — Vertex AI Agent Builder",
+    "summary": "A general platform (no-code + Agent Development Kit) for building multi-agent, tool-using AI agents with rich connectors (RAG, Search, code exec, 100+ app integrations) on Google Cloud.",
+    "case_studies": [
+      { "title": "Trip planning agent (demo)", "summary": "Built a multi-step itinerary assistant that integrates maps, search, and preferences to autonomously plan travel." },
+      { "title": "Contact center expert bot", "summary": "Partner deployment that deflected ~70% of tier-1 queries by grounding answers in enterprise KB and CRM via connectors." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 8,
+    "contextManagement": 7,
+    "integration": 10,
+    "multiAgent": 8,
+    "humanOversight": 7,
+    "selfImprovement": 7,
+    "developmentEase": 8,
+    "scalability": 9,
+    "securityCompliance": 9,
+    "vendorSupport": 8,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-blue-500 to-green-600"
+  },
+  {
+    "slug": "amazon-q-agents",
+    "name": "AWS — Amazon Q Agents (Business & Developer)",
+    "summary": "Generative AI assistants for enterprise (Q Business) and engineering (Q Developer) that answer with citations and autonomously execute multi-step actions across 50+ integrated apps and AWS.",
+    "case_studies": [
+      { "title": "Deriv – Enterprise knowledge assistant", "summary": "Cut new-hire onboarding time by ~45% and accelerated internal Q&A by connecting Slack, Drive, GitHub, and web sources." },
+      { "title": "Nnamu – Engineering acceleration", "summary": "Reduced software feature delivery times by ~30% using Q Developer for code generation, testing, and reviews." },
+      { "title": "Accelya – QA with Q Apps", "summary": "Achieved ~70–80% effort reduction in test case generation using Q Business ‘Q Apps’ for automation." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 9,
+    "contextManagement": 9,
+    "integration": 9,
+    "multiAgent": 9,
+    "humanOversight": 9,
+    "selfImprovement": 8,
+    "developmentEase": 9,
+    "scalability": 10,
+    "securityCompliance": 9,
+    "vendorSupport": 9,
+    "costEffectiveness": 9,
+    "color": "bg-gradient-to-br from-red-600 to-yellow-700"
+  },
+  {
+    "slug": "claude-agents",
+    "name": "Claude Agents",
+    "summary": "Anthropic’s multi-agent system built on Claude LLMs, designed for safe, coordinated, and autonomous assistance across research, coding, and customer support.",
+    "case_studies": [
+      { "title": "SK Telecom – Support agent", "summary": "Claude-powered support handles millions of customer interactions with high accuracy and safety." },
+      { "title": "Grafana – DevOps monitoring assistant", "summary": "Multi-agent Claude system automates metric analysis and alert triage for DevOps teams." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 9,
+    "contextManagement": 8,
+    "integration": 9,
+    "multiAgent": 10,
+    "humanOversight": 8,
+    "selfImprovement": 6,
+    "developmentEase": 8,
+    "scalability": 9,
+    "securityCompliance": 9,
+    "vendorSupport": 8,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-indigo-600 to-purple-700"
+  },
+  {
+    "slug": "phoenix-new",
+    "name": "Fly.io — Phoenix.new",
+    "summary": "An AI pair-programmer environment that autonomously generates, tests, and deploys full-stack Elixir/Phoenix web applications from natural-language prompts.",
+    "case_studies": [
+      { "title": "Real-time chat app prototype", "summary": "Generated and deployed a collaborative chat application with authentication and live updates in one session." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 7,
+    "contextManagement": 8,
+    "integration": 7,
+    "multiAgent": 5,
+    "humanOversight": 8,
+    "selfImprovement": 4,
+    "developmentEase": 9,
+    "scalability": 7,
+    "securityCompliance": 6,
+    "vendorSupport": 7,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-green-600 to-blue-700"
+  },
+  {
+    "slug": "manus-ai",
+    "name": "Manus AI",
+    "summary": "A fully autonomous multi-agent platform combining Claude and Qwen models, capable of independent goal pursuit, dynamic planning, and tool execution across domains.",
+    "case_studies": [
+      { "title": "Social media management", "summary": "Manus autonomously managed 50 social media accounts, creating coordinated content at scale." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 10,
+    "contextManagement": 9,
+    "integration": 10,
+    "multiAgent": 9,
+    "humanOversight": 6,
+    "selfImprovement": 5,
+    "developmentEase": 7,
+    "scalability": 8,
+    "securityCompliance": 6,
+    "vendorSupport": 5,
+    "costEffectiveness": 7,
+    "color": "bg-gradient-to-br from-red-700 to-yellow-800"
+  },
+  {
+    "slug": "lovable-dev",
+    "name": "Lovable.dev",
+    "summary": "A no-code AI app builder that generates front-end UIs and basic back-end logic from natural-language descriptions, focused on rapid prototyping.",
+    "case_studies": [
+      { "title": "Internal dashboard prototype", "summary": "Created a multi-page inventory dashboard connected to Supabase in minutes via plain-language prompts." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 5,
+    "contextManagement": 7,
+    "integration": 6,
+    "multiAgent": 1,
+    "humanOversight": 9,
+    "selfImprovement": 1,
+    "developmentEase": 10,
+    "scalability": 6,
+    "securityCompliance": 4,
+    "vendorSupport": 6,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-blue-700 to-green-800"
+  },
+  {
+    "slug": "pocketflow",
+    "name": "PocketFlow",
+    "summary": "A lightweight open-source framework (<100 lines) for building LLM-powered nodes and workflows with shared memory and multi-agent patterns in pure Python.",
+    "case_studies": [
+      { "title": "Agentic coding prototypes", "summary": "Used to prototype AI debate and multi-agent reasoning demos with minimal code." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 8,
+    "contextManagement": 7,
+    "integration": 8,
+    "multiAgent": 9,
+    "humanOversight": 8,
+    "selfImprovement": 2,
+    "developmentEase": 8,
+    "scalability": 7,
+    "securityCompliance": 8,
+    "vendorSupport": 5,
+    "costEffectiveness": 10,
+    "color": "bg-gradient-to-br from-purple-700 to-pink-800"
+  },
+  {
+    "slug": "composio",
+    "name": "Composio",
+    "summary": "A middleware ‘skill layer’ providing 150+ prebuilt tool integrations, secure auth, and event-driven orchestration for AI agents across enterprise apps.",
+    "case_studies": [
+      { "title": "SwarmZero – AI agent ecosystem", "summary": "Used Composio to expand agent capabilities without scaling engineering headcount by plugging into multiple APIs." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 9,
+    "contextManagement": 5,
+    "integration": 10,
+    "multiAgent": 8,
+    "humanOversight": 7,
+    "selfImprovement": 1,
+    "developmentEase": 9,
+    "scalability": 8,
+    "securityCompliance": 9,
+    "vendorSupport": 8,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-indigo-700 to-purple-800"
+  },
+  {
+    "slug": "watsonx-orchestrate",
+    "name": "IBM — watsonx Orchestrate",
+    "summary": "A no-code/low-code enterprise AI orchestrator with prebuilt assistants for HR, Sales, Procurement, and deeper integration via IBM Automation suite.",
+    "case_studies": [
+      { "title": "Procurement workflow automation", "summary": "Orchestrated email parsing, SAP order creation, and Slack notifications for a global procurement team." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 10,
+    "contextManagement": 8,
+    "integration": 10,
+    "multiAgent": 9,
+    "humanOversight": 8,
+    "selfImprovement": 6,
+    "developmentEase": 10,
+    "scalability": 9,
+    "securityCompliance": 10,
+    "vendorSupport": 10,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-red-800 to-yellow-900"
+  },
+  {
+    "slug": "hubspot-ai-agents",
+    "name": "HubSpot AI Agents (Breeze)",
+    "summary": "A suite of specialized AI assistants embedded in HubSpot CRM for sales, marketing, content, support, and social media workflows.",
+    "case_studies": [
+      { "title": "ResellerRatings – Prospecting agent", "summary": "Improved outreach email quality and response rates by automating personalized prospecting at scale." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 9,
+    "contextManagement": 9,
+    "integration": 8,
+    "multiAgent": 7,
+    "humanOversight": 9,
+    "selfImprovement": 7,
+    "developmentEase": 10,
+    "scalability": 8,
+    "securityCompliance": 9,
+    "vendorSupport": 9,
+    "costEffectiveness": 8,
+    "color": "bg-gradient-to-br from-green-800 to-blue-900"
+  },
+  {
+    "slug": "zendesk-ai-agents",
+    "name": "Zendesk AI Agents",
+    "summary": "Autonomous support bots within Zendesk that answer FAQs, perform conversation actions (e.g., refunds, lookups), and escalate complex cases to humans.",
+    "case_studies": [
+      { "title": "E-commerce support automation", "summary": "Resolved up to 60% of support tickets by automating order status checks, refunds, and knowledge-based answers." }
+    ],
+    "contact_emails": [""],
+    "taskOrchestration": 9,
+    "contextManagement": 8,
+    "integration": 9,
+    "multiAgent": 6,
+    "humanOversight": 9,
+    "selfImprovement": 6,
+    "developmentEase": 8,
+    "scalability": 9,
+    "securityCompliance": 10,
+    "vendorSupport": 9,
+    "costEffectiveness": 9,
+    "color": "bg-gradient-to-br from-purple-800 to-pink-900"
   }
 ]
-

@@ -4,169 +4,50 @@ import {
   Users, Eye, GraduationCap, Code, Scale, Shield, 
   Headphones, DollarSign, Info 
 } from 'lucide-react';
+import seedData from './seed.json';
 
-const aiVendors = [
-  {
-    name: "Operator",
-    taskOrchestration: 4,
-    contextManagement: 5,
-    integration: 3,
-    multiAgent: 5,
-    humanOversight: 5,
-    selfLearning: 2,
-    developmentEase: 3,
-    scalability: 3,
-    securityCompliance: 3,
-    vendorSupport: 5,
-    price: 4,
-    color: "bg-gradient-to-br from-blue-500 to-blue-700",
-    description: "An advanced AI agent that autonomously navigates the web, fills forms, books appointments, and handles repetitive browser tasks. It leverages OpenAI's latest models to automate workflows, with a focus on privacy, self-correction, and seamless user collaboration—offering a new level of practical automation for daily activities."
-  },
-  {
-    name: "Beam AI",
-    taskOrchestration: 3,
-    contextManagement: 5,
-    integration: 2,
-    multiAgent: 4,
-    humanOversight: 2,
-    selfLearning: 4,
-    developmentEase: 5,
-    scalability: 1,
-    securityCompliance: 4,
-    vendorSupport: 2,
-    price: 5,
-    color: "bg-gradient-to-br from-purple-500 to-purple-700",
-    description: "Enables businesses to deploy AI agents for automating complex workflows. Its multi-agent intelligence and agentic workflows streamline operations, reduce costs, and deliver human-level automation in sectors like customer service, insurance, and sales."
-  },
-  {
-    name: "CrewAI",
-    taskOrchestration: 4,
-    contextManagement: 1,
-    integration: 1,
-    multiAgent: 3,
-    humanOversight: 3,
-    selfLearning: 2,
-    developmentEase: 4,
-    scalability: 4,
-    securityCompliance: 3,
-    vendorSupport: 4,
-    price: 4,
-    color: "bg-gradient-to-br from-green-500 to-green-700",
-    description: "An open-source Python framework for building multi-agent AI systems. It enables developers to orchestrate autonomous agents (crews) and flows, creating complex automations with modular, collaborative intelligence for enterprise and research use."
-  },
-  {
-    name: "LangGraph",
-    taskOrchestration: 1,
-    contextManagement: 3,
-    integration: 5,
-    multiAgent: 3,
-    humanOversight: 5,
-    selfLearning: 1,
-    developmentEase: 2,
-    scalability: 4,
-    securityCompliance: 1,
-    vendorSupport: 4,
-    price: 2,
-    color: "bg-gradient-to-br from-red-500 to-red-700",
-    description: "A stateful orchestration framework built on LangChain, designed for sophisticated agent workflows. It enables developers to build, deploy, and manage long-running, stateful agents with memory, human-in-the-loop, and robust debugging tools."
-  },
-  {
-    name: "n8n (AI Agents)",
-    taskOrchestration: 2,
-    contextManagement: 1,
-    integration: 2,
-    multiAgent: 5,
-    humanOversight: 2,
-    selfLearning: 4,
-    developmentEase: 4,
-    scalability: 4,
-    securityCompliance: 4,
-    vendorSupport: 5,
-    price: 3,
-    color: "bg-gradient-to-br from-orange-500 to-orange-700",
-    description: "A workflow automation platform that integrates AI agents with 500+ services. It allows users to build, branch, and adapt multi-agent systems with a declarative UI, supporting advanced integrations and flexible automation for complex business processes."
-  },
-  {
-    name: "Autogen",
-    taskOrchestration: 5,
-    contextManagement: 3,
-    integration: 3,
-    multiAgent: 5,
-    humanOversight: 2,
-    selfLearning: 5,
-    developmentEase: 2,
-    scalability: 4,
-    securityCompliance: 5,
-    vendorSupport: 5,
-    price: 2,
-    color: "bg-gradient-to-br from-indigo-500 to-indigo-700",
-    description: "Microsoft's multi-agent conversational AI framework that enables multiple AI agents to collaborate and communicate to solve complex tasks through structured conversations and role-based interactions."
-  },
-  {
-    name: "MetaGPT",
-    taskOrchestration: 3,
-    contextManagement: 4,
-    integration: 2,
-    multiAgent: 2,
-    humanOversight: 3,
-    selfLearning: 4,
-    developmentEase: 5,
-    scalability: 3,
-    securityCompliance: 4,
-    vendorSupport: 4,
-    price: 3,
-    color: "bg-gradient-to-br from-teal-500 to-teal-700",
-    description: "A multi-agent framework that assigns different roles to GPTs to form a collaborative software entity for complex tasks, featuring role-based prompting and structured agent interactions."
-  },
-  {
-    name: "Haystack Agents",
-    taskOrchestration: 1,
-    contextManagement: 2,
-    integration: 4,
-    multiAgent: 2,
-    humanOversight: 4,
-    selfLearning: 2,
-    developmentEase: 3,
-    scalability: 1,
-    securityCompliance: 4,
-    vendorSupport: 3,
-    price: 2,
-    color: "bg-gradient-to-br from-pink-500 to-pink-700",
-    description: "An open-source framework for building production-ready applications with large language models, featuring modular components for search, question answering, and document processing workflows."
-  },
-  {
-    name: "Superagent",
-    taskOrchestration: 3,
-    contextManagement: 4,
-    integration: 3,
-    multiAgent: 4,
-    humanOversight: 3,
-    selfLearning: 3,
-    developmentEase: 4,
-    scalability: 1,
-    securityCompliance: 3,
-    vendorSupport: 2,
-    price: 5,
-    color: "bg-gradient-to-br from-yellow-500 to-yellow-700",
-    description: "A platform for building, deploying, and managing AI agents with tools for memory management, function calling, and integration with various APIs and services."
-  },
-  {
-    name: "LlamaIndex",
-    taskOrchestration: 2,
-    contextManagement: 3,
-    integration: 3,
-    multiAgent: 2,
-    humanOversight: 4,
-    selfLearning: 5,
-    developmentEase: 1,
-    scalability: 5,
-    securityCompliance: 4,
-    vendorSupport: 3,
-    price: 3,
-    color: "bg-gradient-to-br from-cyan-500 to-cyan-700",
-    description: "A data framework for LLM applications that provides tools for data ingestion, indexing, and querying, enabling AI agents to work with structured and unstructured data sources effectively."
-  }
-];
+interface VendorCard {
+  name: string;
+  taskOrchestration: number;
+  contextManagement: number;
+  integration: number;
+  multiAgent: number;
+  humanOversight: number;
+  selfImprovement: number;
+  developmentEase: number;
+  scalability: number;
+  securityCompliance: number;
+  vendorSupport: number;
+  costEffectiveness: number;
+  color: string;
+  description: string;
+  slug?: string;
+  summary?: string;
+  case_studies?: { title: string; summary: string }[];
+  contact_emails?: string[];
+}
+
+const generateRandomColor = () => {
+  const colors = [
+    "bg-gradient-to-br from-blue-500 to-blue-700",
+    "bg-gradient-to-br from-purple-500 to-purple-700",
+    "bg-gradient-to-br from-green-500 to-green-700",
+    "bg-gradient-to-br from-red-500 to-red-700",
+    "bg-gradient-to-br from-orange-500 to-orange-700",
+    "bg-gradient-to-br from-indigo-500 to-indigo-700",
+    "bg-gradient-to-br from-teal-500 to-teal-700",
+    "bg-gradient-to-br from-pink-500 to-pink-700",
+    "bg-gradient-to-br from-yellow-500 to-yellow-700",
+    "bg-gradient-to-br from-cyan-500 to-cyan-700",
+  ];
+  return colors[Math.floor(Math.random() * colors.length)];
+};
+
+const aiVendors: VendorCard[] = seedData.map(vendor => ({
+  ...vendor,
+  color: generateRandomColor(),
+  description: vendor.summary || "No description available.",
+}));
 
 const statNames = {
   taskOrchestration: "Task Orchestration",
@@ -174,12 +55,12 @@ const statNames = {
   integration: "Integration",
   multiAgent: "Multi-Agent",
   humanOversight: "Human Oversight",
-  selfLearning: "Self-Learning",
+  selfImprovement: "Self-Improvement",
   developmentEase: "Development Ease",
   scalability: "Scalability",
   securityCompliance: "Security & Compliance",
   vendorSupport: "Vendor Support",
-  price: "Price"
+  costEffectiveness: "Cost-Effectiveness"
 };
 
 const statIcons = {
@@ -188,12 +69,12 @@ const statIcons = {
   integration: Puzzle,
   multiAgent: Users,
   humanOversight: Eye,
-  selfLearning: GraduationCap,
+  selfImprovement: GraduationCap,
   developmentEase: Code,
   scalability: Scale,
   securityCompliance: Shield,
   vendorSupport: Headphones,
-  price: DollarSign
+  costEffectiveness: DollarSign
 };
 
 const statDescriptions = {
@@ -211,14 +92,14 @@ const statDescriptions = {
 };
 
 function TopTrumpsGame() {
-  const [playerCard, setPlayerCard] = useState(null);
-  const [computerCard, setComputerCard] = useState(null);
-  const [selectedStat, setSelectedStat] = useState(null);
+  const [playerCard, setPlayerCard] = useState<VendorCard | null>(null);
+  const [computerCard, setComputerCard] = useState<VendorCard | null>(null);
+  const [selectedStat, setSelectedStat] = useState<keyof VendorCard | null>(null);
   const [gameState, setGameState] = useState('start'); // 'start', 'comparing', 'result'
   const [playerScore, setPlayerScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
-  const [usedCards, setUsedCards] = useState([]);
-  const [winner, setWinner] = useState(null);
+  const [usedCards, setUsedCards] = useState<string[]>([]);
+  const [winner, setWinner] = useState<'player' | 'computer' | 'tie' | null>(null);
   const [playerCardFlipped, setPlayerCardFlipped] = useState(false);
   const [computerCardFlipped, setComputerCardFlipped] = useState(false);
 
@@ -247,7 +128,9 @@ function TopTrumpsGame() {
     
     const newComputerCard = getRandomCard();
     setComputerCard(newComputerCard);
-    setUsedCards(prev => [...prev, newComputerCard.name]);
+    if (newComputerCard) {
+      setUsedCards(prev => [...prev, newComputerCard.name]);
+    }
     
     setSelectedStat(null);
     setGameState('start');
@@ -255,22 +138,24 @@ function TopTrumpsGame() {
     setComputerCardFlipped(false);
   };
 
-  const compareStat = (stat) => {
-    if (!playerCard || !computerCard) return;
-    
+  const compareStat = (stat: keyof VendorCard) => {
+    if (!playerCard || !computerCard || !stat) return;
+
     setSelectedStat(stat);
     setGameState('comparing');
-    
+
     setTimeout(() => {
       const playerValue = playerCard[stat];
       const computerValue = computerCard[stat];
-      
-      if (playerValue > computerValue) {
-        setPlayerScore(prev => prev + 1);
-      } else if (computerValue > playerValue) {
-        setComputerScore(prev => prev + 1);
+
+      if (playerValue !== undefined && computerValue !== undefined) {
+        if (playerValue > computerValue) {
+          setPlayerScore(prev => prev + 1);
+        } else if (computerValue > playerValue) {
+          setComputerScore(prev => prev + 1);
+        }
       }
-      
+
       setGameState('result');
     }, 1500);
   };
@@ -474,25 +359,21 @@ function TopTrumpsGame() {
         
         {gameState === 'comparing' && (
           <div className="text-center text-white mb-6">
-            <p className="text-xl animate-pulse">Comparing {statNames[selectedStat]}...</p>
+            <p className="text-xl animate-pulse">Comparing {selectedStat ? statNames[selectedStat] : ''}...</p>
           </div>
         )}
         
         {gameState === 'result' && (
           <div className="text-center text-white mb-6">
             <div className="text-xl">
-              {playerCard && computerCard && selectedStat && (
-                <>
-                  {playerCard[selectedStat] > computerCard[selectedStat] && (
-                    <p className="text-green-400 font-bold">You Win This Round! 🎉</p>
-                  )}
-                  {playerCard[selectedStat] < computerCard[selectedStat] && (
-                    <p className="text-red-400 font-bold">Computer Wins This Round! 🤖</p>
-                  )}
-                  {playerCard[selectedStat] === computerCard[selectedStat] && (
-                    <p className="text-yellow-400 font-bold">It's a Tie! 🤝</p>
-                  )}
-                </>
+              {playerCard && computerCard && selectedStat && playerCard[selectedStat] !== undefined && computerCard[selectedStat] !== undefined && playerCard[selectedStat] > computerCard[selectedStat] && (
+                <p className="text-green-400 font-bold">You Win This Round! 🎉</p>
+              )}
+              {playerCard && computerCard && selectedStat && playerCard[selectedStat] !== undefined && computerCard[selectedStat] !== undefined && playerCard[selectedStat] < computerCard[selectedStat] && (
+                <p className="text-red-400 font-bold">Computer Wins This Round! 🤖</p>
+              )}
+              {playerCard && computerCard && selectedStat && playerCard[selectedStat] !== undefined && computerCard[selectedStat] !== undefined && playerCard[selectedStat] === computerCard[selectedStat] && (
+                <p className="text-yellow-400 font-bold">It's a Tie! 🤝</p>
               )}
             </div>
             <button
