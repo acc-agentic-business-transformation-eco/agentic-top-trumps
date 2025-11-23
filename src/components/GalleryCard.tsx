@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Info } from 'lucide-react';
-import { VendorCard } from '../types';
+import { VendorCard, Theme } from '../types';
 import { statNames, statIcons } from '../constants/stats';
 import { StatKey } from '../types';
 
@@ -9,9 +8,55 @@ interface GalleryCardProps {
     vendor: VendorCard;
     onClick: () => void;
     isSelected: boolean;
+    theme: Theme;
 }
 
-export const GalleryCard: React.FC<GalleryCardProps> = ({ vendor, onClick, isSelected }) => {
+export const GalleryCard: React.FC<GalleryCardProps> = ({ vendor, onClick, isSelected, theme }) => {
+    // Dynamic styles based on theme
+    const getThemeStyles = () => {
+        switch (theme) {
+            case 'dark':
+                return {
+                    container: 'bg-slate-800 border-slate-700 hover:border-slate-500 text-white',
+                    textPrimary: 'text-slate-100',
+                    textSecondary: 'text-slate-400',
+                    statBg: 'bg-slate-700/50 border-slate-600/50',
+                    statText: 'text-slate-300',
+                    statValue: 'text-slate-200',
+                    accent: 'bg-blue-500',
+                    hoverOverlay: 'bg-white/5',
+                    footerText: 'text-slate-500 group-hover:text-blue-400'
+                };
+            case 'vibrant':
+                return {
+                    container: `${vendor.color} border-white/20 hover:border-white/40 text-white`,
+                    textPrimary: 'text-white',
+                    textSecondary: 'text-white/80',
+                    statBg: 'bg-black/20 border-white/10',
+                    statText: 'text-white/90',
+                    statValue: 'text-white',
+                    accent: 'bg-white/30',
+                    hoverOverlay: 'bg-black/10',
+                    footerText: 'text-white/70 group-hover:text-white'
+                };
+            case 'light':
+            default:
+                return {
+                    container: 'bg-white border-slate-200 hover:border-blue-300 text-slate-800',
+                    textPrimary: 'text-slate-900',
+                    textSecondary: 'text-slate-500',
+                    statBg: 'bg-slate-50 border-slate-100 group-hover:border-blue-50',
+                    statText: 'text-slate-500',
+                    statValue: 'text-slate-700',
+                    accent: 'bg-blue-500',
+                    hoverOverlay: 'bg-blue-50/10',
+                    footerText: 'text-slate-400 group-hover:text-blue-500'
+                };
+        }
+    };
+
+    const styles = getThemeStyles();
+
     return (
         <motion.div
             layoutId={`card-${vendor.name}`}
@@ -20,42 +65,40 @@ export const GalleryCard: React.FC<GalleryCardProps> = ({ vendor, onClick, isSel
             whileHover={{ scale: isSelected ? 1 : 1.05 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
         >
-            <div className={`${vendor.color} rounded-xl p-4 h-full text-white shadow-xl flex flex-col overflow-hidden relative`}>
+            <div className={`${styles.container} rounded-xl p-5 h-full shadow-lg hover:shadow-xl flex flex-col overflow-hidden relative border transition-all duration-300`}>
                 {/* Header */}
-                <div className="text-center mb-2">
-                    <motion.h3 layoutId={`title-${vendor.name}`} className="text-sm font-bold opacity-80 uppercase tracking-wider mb-1">
-                        AI Vendor
-                    </motion.h3>
-                    <div className="bg-white/20 rounded-lg px-3 py-2">
-                        <motion.h4 layoutId={`name-${vendor.name}`} className="text-lg font-bold truncate">
-                            {vendor.name}
-                        </motion.h4>
-                    </div>
+                <div className="text-center mb-4">
+                    <motion.h4 layoutId={`name-${vendor.name}`} className={`text-xl font-bold truncate ${styles.textPrimary}`}>
+                        {vendor.name}
+                    </motion.h4>
+                    <div className={`h-0.5 w-12 mx-auto mt-2 rounded-full ${styles.accent}`} />
                 </div>
 
-                {/* Stats Preview (only show a few key stats in grid view) */}
-                <div className="mt-4 space-y-2 flex-1">
+                {/* Stats Preview */}
+                <div className="space-y-3 flex-1">
                     {(['taskOrchestration', 'contextManagement', 'integration'] as StatKey[]).map((key) => {
                         const Icon = statIcons[key];
                         return (
-                            <div key={key} className="flex items-center justify-between bg-white/10 rounded px-2 py-1.5">
+                            <div key={key} className={`flex items-center justify-between rounded px-3 py-2 border transition-colors ${styles.statBg}`}>
                                 <div className="flex items-center gap-2">
-                                    <Icon size={14} className="text-white/80" />
-                                    <span className="text-xs font-medium text-white/90 truncate max-w-[80px]">
+                                    <Icon size={14} className={`${styles.textSecondary} group-hover:text-current transition-colors`} />
+                                    <span className={`text-xs font-medium truncate max-w-[90px] ${styles.statText}`}>
                                         {statNames[key]}
                                     </span>
                                 </div>
-                                <span className="text-sm font-bold">{vendor[key]}</span>
+                                <span className={`text-sm font-bold ${styles.statValue}`}>{vendor[key]}</span>
                             </div>
                         );
                     })}
-                    <div className="text-center mt-2">
-                        <span className="text-xs text-white/60 italic">Click for more details...</span>
-                    </div>
+                </div>
+
+                {/* Footer */}
+                <div className="mt-4 text-center">
+                    <span className={`text-xs font-medium transition-colors duration-300 ${styles.footerText}`}>View Details</span>
                 </div>
 
                 {/* Hover Effect Overlay */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 rounded-xl" />
+                <div className={`absolute inset-0 transition-colors duration-300 rounded-xl pointer-events-none ${styles.hoverOverlay}`} />
             </div>
         </motion.div>
     );

@@ -19,4 +19,6 @@ export interface VendorCard {
     contact_emails?: string[];
 }
 
-export type StatKey = keyof Omit<VendorCard, 'name' | 'color' | 'description' | 'slug' | 'summary' | 'case_studies' | 'contact_emails'>;
+export type StatKey = keyof Omit<VendorCard, 'name' | 'description' | 'color' | 'summary' | 'case_studies' | 'contact_emails' | 'slug'>;
+
+export type Theme = 'light' | 'dark' | 'vibrant';
