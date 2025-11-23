@@ -1,11 +1,13 @@
-import React from 'react';
-import { Zap, Trophy, RotateCcw, Shuffle } from 'lucide-react';
+import React, { useState } from 'react';
+import { Zap, Trophy, RotateCcw, Shuffle, Grid, Play } from 'lucide-react';
 import { useGameLogic } from './hooks/useGameLogic';
 import { Card } from './components/Card';
+import { VendorGallery } from './components/VendorGallery';
 import { statNames, statIcons, statDescriptions } from './constants/stats';
 import { StatKey } from './types';
 
 function App() {
+    const [view, setView] = useState<'game' | 'gallery'>('game');
     const {
         playerCard,
         computerCard,
@@ -24,6 +26,20 @@ function App() {
         resetGame,
         aiVendors
     } = useGameLogic();
+
+    if (view === 'gallery') {
+        return (
+            <>
+                <button
+                    onClick={() => setView('game')}
+                    className="fixed top-4 left-4 z-50 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 shadow-lg transition-colors"
+                >
+                    <Play size={20} /> Play Game
+                </button>
+                <VendorGallery />
+            </>
+        );
+    }
 
     if (winner) {
         return (
@@ -52,6 +68,13 @@ function App() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-purple-900 to-blue-900 p-4">
+            <button
+                onClick={() => setView('gallery')}
+                className="fixed top-4 left-4 z-50 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 shadow-lg transition-colors"
+            >
+                <Grid size={20} /> View Gallery
+            </button>
+
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center text-white mb-8">
