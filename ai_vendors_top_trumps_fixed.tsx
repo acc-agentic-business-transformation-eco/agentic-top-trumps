@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Shuffle, RotateCcw, Trophy, Zap, Cog, Brain, Puzzle, 
-  Users, Eye, GraduationCap, Code, Scale, Shield, 
-  Headphones, DollarSign, Info 
+import {
+  Shuffle, RotateCcw, Trophy, Zap, Cog, Brain, Puzzle,
+  Users, Eye, GraduationCap, Code, Scale, Shield,
+  Headphones, DollarSign, Info
 } from 'lucide-react';
 import seedData from './seed.json';
 
@@ -83,12 +83,12 @@ const statDescriptions = {
   integration: "An agentic AI solution must connect with the external tools, data sources, and enterprise systems required to get work done. Top platforms offer extensive integration capabilities, allowing agents to call APIs, databases, CRMs, web services, or other applications as part of their workflow.",
   multiAgent: "Some advanced agentic platforms support multi-agent systems, where multiple AI agents with specialized roles can work in tandem. This capability allows one agent to delegate sub-tasks to others or for a \"team\" of agents to cooperate towards a goal. When evaluating tools, consider if they support orchestrating multiple agents and how they manage inter-agent communication and coordination.",
   humanOversight: "Agents should gracefully defer to humans when needed. Agentic AI solutions often operate in environments where human users or operators are involved, so it's key to assess how the AI interacts with people and allows human-in-the-loop oversight. Consider the agent's user interaction channels: Can it communicate via multiple channels (chat interface, email, messaging apps, voice, etc.)?",
-  selfLearning: "Ability to learn from experience and adapt over time. Check if the tool supports fine-tuning on domain-specific data or incremental learning so it can be customized and get smarter in your context.",
+  selfImprovement: "Ability to learn from experience and adapt over time. Check if the tool supports fine-tuning on domain-specific data or incremental learning so it can be customized and get smarter in your context.",
   developmentEase: "The ease with which your team can develop, configure, and maintain the AI agent. Look for low-code or no-code development features. For code-centric frameworks, a well-documented SDK and modular design with pre-built templates or modules for common tasks can speed up implementation.",
   scalability: "Evaluate whether the solution can handle increasing workloads, complex tasks, and large user bases without degradation in performance. Key questions include: Can the platform scale from a small pilot to a production system with thousands of users or agents?",
   securityCompliance: "Any enterprise-ready agentic AI tool must meet high standards for security and compliance. When evaluating, verify that the vendor or platform adheres to industry security certifications and regulations (for example, SOC 2 Type II, ISO 27001, GDPR, CCPA, etc.)",
   vendorSupport: "For long term viability check the vendor backing for a platform. Review case studies to verify clients with successful stories. How strong is the community behind the platform? What guarantees does the vendor offer and is there any history of that to verify.",
-  price: "Agentic AI tools vary widely in pricing models. Some charge by usage (API calls or number of agents), others by seat or subscription tier, and some might be included as features in a larger platform. Ensure there is pricing transparency with no hidden fees, and consider the total cost including any needed add-ons (e.g. premium support, extra modules)."
+  costEffectiveness: "Agentic AI tools vary widely in pricing models. Some charge by usage (API calls or number of agents), others by seat or subscription tier, and some might be included as features in a larger platform. Ensure there is pricing transparency with no hidden fees, and consider the total cost including any needed add-ons (e.g. premium support, extra modules)."
 };
 
 function TopTrumpsGame() {
@@ -122,16 +122,16 @@ function TopTrumpsGame() {
       }
       return;
     }
-    
+
     setPlayerCard(newPlayerCard);
     setUsedCards(prev => [...prev, newPlayerCard.name]);
-    
+
     const newComputerCard = getRandomCard();
     setComputerCard(newComputerCard);
     if (newComputerCard) {
       setUsedCards(prev => [...prev, newComputerCard.name]);
     }
-    
+
     setSelectedStat(null);
     setGameState('start');
     setPlayerCardFlipped(false);
@@ -178,13 +178,12 @@ function TopTrumpsGame() {
       <button
         onClick={() => isPlayerCard && compareStat(stat)}
         disabled={disabled || !isPlayerCard}
-        className={`px-3 py-2 rounded border transition-all duration-300 text-left w-full ${
-          isSelected 
-            ? 'border-yellow-300 bg-white/30 shadow-md' 
+        className={`px-3 py-2 rounded border transition-all duration-300 text-left w-full ${isSelected
+            ? 'border-yellow-300 bg-white/30 shadow-md'
             : disabled || !isPlayerCard
-              ? 'border-white/20 bg-white/10' 
+              ? 'border-white/20 bg-white/10'
               : 'border-white/30 hover:border-white/50 hover:bg-white/20 cursor-pointer'
-        }`}
+          }`}
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2 flex-1 min-w-0">
@@ -202,15 +201,15 @@ function TopTrumpsGame() {
   const Card = ({ vendor, title, showStats = true, isRevealed = true, isPlayerCard = true, isFlipped, onFlip }) => {
     return (
       <div className="w-full h-full relative" style={{ perspective: '1000px' }}>
-        <div 
+        <div
           className="relative w-full h-full transition-transform duration-700"
-          style={{ 
+          style={{
             transformStyle: 'preserve-3d',
             transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'
           }}
         >
           {/* Front of card - Stats */}
-          <div 
+          <div
             className="absolute inset-0"
             style={{ backfaceVisibility: 'hidden' }}
           >
@@ -233,7 +232,7 @@ function TopTrumpsGame() {
                   </div>
                 )}
               </div>
-              
+
               {vendor && showStats && isRevealed && (
                 <div className="space-y-2 flex-1 overflow-y-auto">
                   {Object.entries(statNames).map(([key, name]) => (
@@ -248,7 +247,7 @@ function TopTrumpsGame() {
                   ))}
                 </div>
               )}
-              
+
               {!isRevealed && (
                 <div className="flex items-center justify-center flex-1">
                   <div className="text-6xl opacity-50">?</div>
@@ -256,11 +255,11 @@ function TopTrumpsGame() {
               )}
             </div>
           </div>
-          
+
           {/* Back of card - Description */}
-          <div 
+          <div
             className="absolute inset-0"
-            style={{ 
+            style={{
               backfaceVisibility: 'hidden',
               transform: 'rotateY(180deg)'
             }}
@@ -284,7 +283,7 @@ function TopTrumpsGame() {
                   </div>
                 )}
               </div>
-              
+
               {vendor && (
                 <div className="flex-1 flex items-center">
                   <div className="bg-white/10 rounded-lg p-4 h-full w-full overflow-y-auto">
@@ -356,13 +355,13 @@ function TopTrumpsGame() {
             <p className="text-xl">Choose a stat to compete with!</p>
           </div>
         )}
-        
+
         {gameState === 'comparing' && (
           <div className="text-center text-white mb-6">
             <p className="text-xl animate-pulse">Comparing {selectedStat ? statNames[selectedStat] : ''}...</p>
           </div>
         )}
-        
+
         {gameState === 'result' && (
           <div className="text-center text-white mb-6">
             <div className="text-xl">
@@ -390,22 +389,22 @@ function TopTrumpsGame() {
           <div className="grid grid-cols-2 gap-6">
             <div className="h-96">
               <h2 className="text-xl font-bold text-white text-center mb-2">Your Card</h2>
-              <Card 
-                vendor={playerCard} 
-                title="Player" 
+              <Card
+                vendor={playerCard}
+                title="Player"
                 isPlayerCard={true}
                 isFlipped={playerCardFlipped}
                 onFlip={() => setPlayerCardFlipped(!playerCardFlipped)}
               />
             </div>
-            
+
             <div className="h-96">
               <h2 className="text-xl font-bold text-white text-center mb-2">Computer's Card</h2>
-              <Card 
-                vendor={computerCard} 
-                title="Computer" 
+              <Card
+                vendor={computerCard}
+                title="Computer"
                 showStats={true}
-                isRevealed={gameState === 'result'} 
+                isRevealed={gameState === 'result'}
                 isPlayerCard={false}
                 isFlipped={computerCardFlipped}
                 onFlip={() => setComputerCardFlipped(!computerCardFlipped)}
